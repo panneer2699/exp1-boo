@@ -1,0 +1,98 @@
+<html>
+<head>
+	<title>Sign up</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		h1{
+			text-align: center;
+			font-size: 4vw;
+			color: black;
+
+		}
+		.s{
+			background-color: royalblue;
+			color: white;
+			width: 100%;
+		}
+		h2{
+			text-align: center;
+			font-size: 2.5vw;
+
+		}
+		body{
+			background-image: url("bg3.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			font-family: cursive;
+			
+		}
+		.bf{
+			background-color: pink;
+			margin-left: 30%;
+			border: 3px solid black;
+			border-radius: 40px;
+			margin-top: 4%;
+			margin-right: 30%;
+			margin-bottom: 3%;
+			
+		}
+		input[type=radio],input[type=checkbox]{
+			margin-left: 8%;
+			font-size: 1.5vw;
+		}
+		input[type=text],input[type=e-mail],input[type=tel],input[type=Date],input[type=password],select{
+			width: 80%;
+			padding: 12px;
+			font-size: 1.2vw;
+			margin-left: 5%;
+		}
+		input[type=button],button{
+				font-size: 2.5vw;
+				background-color: royalblue;
+				color: white;
+				padding: 5px;
+				border-radius: 35px;
+		}
+		p{
+			font-size: 1.8vw;
+			text-align: left;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="s">
+	<h1>Sign Up page</h1><br></div>
+<div class="bf">
+	<h2>Sign Up</h2>
+	<form name="sign up" onsubmit="return validateform()">
+		<p>First name : </p> <input type="text" name="name1" id="name1"><br><br>
+		<p>Last name : </p> <input type="text" name="name2" id="name2" ><br><br>
+		<p>e-mail :</p> <input type="e-mail" name="mail" id="mail" ><br><br>
+  		<p>Mobile number : </p> <input type="tel" name="phnum" id="phnum"  maxlength="10"><br><br>
+  		<p> Gender : </p>  <input type="radio" name="gender" " id="gender" value="male" checked> Male<br>
+  							<input type="radio" name="gender" id="gender" value="female"> Female<br>
+ 							<input type="radio" name="gender" id="gender" value="other"> Other<br><br>
+ 		<p>Date of Birth : </p> <input type="Date" name="dob" id="dob"><br><br>
+ 		<p>Category:</p> <select>
+ 			<option>Student</option>
+ 			<option>Job</option>
+ 			<option>Self employed</option>
+ 		</select><br><br>
+ 		<p>Languages</p><input type="checkbox" name="lang1" value="Tamil">Tamil<br>
+  				<input type="checkbox" name="lang2" value="English">English<br>
+  				<input type="checkbox" name="lang3" value="Malayalam">Malayalam<br>
+  				<input type="checkbox" name="lang4" value="Kannadam">Kannadam<br>
+  				<input type="checkbox" name="lang5" value="Telugu">Telugu<br>
+  				<input type="checkbox" name="lang6" value="Hindi">Hindi<br><br>
+  		<p>Create Password : </p> <input type="Password" name="psw" id="psw"><br><br>
+  		<p>Confirm Password : </p> <input type="Password" name="psw" id="psw"><br><br>
+  		<center><input type="button" name="submit" value="submit" > &nbsp; <input type="button" name="reset" value="reset" ></center><br><br>
+	</form>
+</div>
+</body>
+</html>
